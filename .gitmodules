@@ -1,0 +1,30 @@
+[submodule "Gigwa2"]
+	path = Gigwa2
+	url = https://github.com/Breeding-Insight/Gigwa2
+[submodule "Mgdb2BrapiV2Impl"]
+	path = Mgdb2BrapiV2Impl
+	url = https://github.com/Breeding-Insight/Mgdb2BrapiV2Impl
+[submodule "GenotypeFileManipulation"]
+	path = GenotypeFileManipulation
+	url = https://github.com/SouthGreenPlatform/GenotypeFileManipulation
+[submodule "Gigwa2ServiceImpl"]
+	path = Gigwa2ServiceImpl
+	url = https://github.com/SouthGreenPlatform/Gigwa2ServiceImpl
+[submodule "Gigwa2ServiceInterface"]
+	path = Gigwa2ServiceInterface
+	url = https://github.com/SouthGreenPlatform/Gigwa2ServiceInterface
+[submodule "Mgdb2"]
+	path = Mgdb2
+	url = https://github.com/SouthGreenPlatform/Mgdb2
+[submodule "Mgdb2BrapiImpl"]
+	path = Mgdb2BrapiImpl
+	url = https://github.com/SouthGreenPlatform/Mgdb2BrapiImpl
+[submodule "Mgdb2BrapiModel"]
+	path = Mgdb2BrapiModel
+	url = https://github.com/SouthGreenPlatform/Mgdb2BrapiModel
+[submodule "Mgdb2Export"]
+	path = Mgdb2Export
+	url = https://github.com/SouthGreenPlatform/Mgdb2Export
+[submodule "role_manager"]
+	path = role_manager
+	url = https://github.com/SouthGreenPlatform/role_manager
