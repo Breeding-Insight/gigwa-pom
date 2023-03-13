@@ -1,0 +1,30 @@
+name: Submodule Sync
+
+on:
+  schedule:
+    - cron: 0 5 * * *
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Update submodules
+        run: |
+          git submodule update --init --recursive
+          git submodule update --remote Gigwa2
+          git submodule update --remote Mgdb2BrapiV2Impl
+
+      - name: Commit update
+        run: |
+          git config --local user.email "bidevteam@cornell.edu"
+          git config --local user.name "rob-ouser-bi"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git commit -am "Auto updated submodule references" && git push || echo "No changes to commit"
